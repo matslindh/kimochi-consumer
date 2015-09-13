@@ -8,6 +8,7 @@ class Kimochi:
         if site_key:
             url = url + 'sites/' + site_key + '/'
 
+        self.site_key = site_key
         self.url = url
         self.api_key = api_key
 
