@@ -23,4 +23,6 @@ class Kimochi:
 
     def _get(self, path):
         r = requests.get(self.url + path, {'api_key': self.api_key})
+
+        print(r.content)
         return r.json()
