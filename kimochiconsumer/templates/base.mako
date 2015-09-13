@@ -26,6 +26,16 @@
             {
                 text-align: center;
             }
+
+            header
+            {
+                margin-bottom: 3.0em;
+            }
+
+            .gallery-image
+            {
+                text-align: center;
+            }
         </style>
     </head>
     <div class="container">
