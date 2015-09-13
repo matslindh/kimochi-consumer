@@ -21,6 +21,9 @@ class Kimochi:
     def gallery(self, gallery_id):
         return self._get('galleries/' + str(gallery_id))
 
+    def gallery_image(self, gallery_id, image_id):
+        return self._get('galleries/' + str(gallery_id) + '/image/' + str(image_id))
+
     def _get(self, path):
         r = requests.get(self.url + path, {'api_key': self.api_key})
 
