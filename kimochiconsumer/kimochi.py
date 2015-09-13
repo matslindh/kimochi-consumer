@@ -1,13 +1,14 @@
 import requests
 
 class Kimochi:
-    def __init__(self, url, api_key, site_key = None):
+    def __init__(self, url, api_key, site_key=None):
         if not url.endswith('/'):
             url += '/'
 
         if site_key:
-            self.url = url + 'sites/' + site_key + '/'
+            url = url + 'sites/' + site_key + '/'
 
+        self.url = url
         self.api_key = api_key
 
     def page(self, page_id):
