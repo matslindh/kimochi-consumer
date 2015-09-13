@@ -25,7 +25,7 @@ def gallery_view(request):
 
 @view_config(route_name='gallery_image_view', renderer='templates/gallery_image.mako')
 def gallery_image_view(request):
-    data = request.kimochi.gallery(request.matchdict['gallery_id'])
+    data = request.kimochi.gallery_image(request.matchdict['gallery_id'], request.matchdict['image_id'])
 
     if 'gallery' not in data or not data['gallery']:
         raise HTTPNotFound
