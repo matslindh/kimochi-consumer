@@ -54,7 +54,7 @@
 
             <nav class="nav">
                 % for page in site['pages']:
-                    <a href="${request.route_url('page_view', page_id=page['id'])}">${page['name']}</a>
+                    <a href="${request.route_url('page_view', page_id=page['id'], slug=page['slug'])}">${page['name']}</a>
                 % endfor
             </nav>
         </header>

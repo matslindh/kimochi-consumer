@@ -14,7 +14,7 @@ def main(global_config, **settings):
     config.include('pyramid_mako')
     config.add_static_view('static', 'static', cache_max_age=3600)
     config.add_route('page', '/')
-    config.add_route('page_view', '/pages/{page_id}')
+    config.add_route('page_view', '/pages/{page_id}/{slug}')
     config.add_route('gallery_view', '/gallery/{gallery_id}')
     config.add_route('gallery_image_view', '/gallery/{gallery_id}/image/{image_id}')
     config.add_request_method(get_kimochi, 'kimochi', reify=True)
