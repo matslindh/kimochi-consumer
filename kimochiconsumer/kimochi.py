@@ -25,7 +25,13 @@ class Kimochi:
         return self._get('galleries/' + str(gallery_id) + '/image/' + str(image_id))
 
     def _get(self, path):
-        r = requests.get(self.url + path, {'api_key': self.api_key})
+        url = self.url + path
+        r = requests.get(url, {'api_key': self.api_key})
 
-        print(r.content)
-        return r.json()
+        try:
+            return r.json()
+        except:
+            print(url + '?api_key=' + self.api_key)
+            print(r.content)
+
+        return None
