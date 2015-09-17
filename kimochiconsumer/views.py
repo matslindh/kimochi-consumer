@@ -10,7 +10,7 @@ def page_view(request):
     if 'page_id' in request.matchdict:
         data = request.kimochi.page(request.matchdict['page_id'])
     else:
-        data = request.kimochi.page('1')
+        data = request.kimochi.page('index')
 
     return data
 
