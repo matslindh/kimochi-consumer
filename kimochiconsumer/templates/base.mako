@@ -36,6 +36,14 @@
             {
                 text-align: center;
             }
+
+            footer {
+                text-align: center;
+                margin-top: 2.0em;
+                padding-top: 2.0em;
+                border-top: 1px solid #eee;
+                color: #aaa;
+            }
         </style>
     </head>
     <div class="container">
@@ -54,5 +62,9 @@
         <div>
             ${next.body()}
         </div>
+
+        <footer>
+            ${site['footer']['text'] | n}
+        </footer>
     </div>
 </html>
