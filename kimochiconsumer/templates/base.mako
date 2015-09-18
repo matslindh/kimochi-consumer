@@ -44,12 +44,31 @@
                 border-top: 1px solid #eee;
                 color: #aaa;
             }
+
+            nav a
+            {
+                display: inline-block;
+                margin-right: 1.0em;
+                margin-left: 1.0em;
+            }
+
+            header h1 a
+            {
+                color: black;
+                text-decoration: none;
+            }
+
+            header h1 a:hover
+            {
+                color: black;
+                text-decoration: none;
+            }
         </style>
     </head>
     <div class="container">
         <header>
             <h1>
-                ${site['name']}
+                <a href="/">${site['name']}</a>
             </h1>
 
             <nav class="nav">
