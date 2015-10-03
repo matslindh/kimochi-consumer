@@ -68,6 +68,23 @@
             {
                 opacity: 0.4;
             }
+
+            .image-navigation-bar
+            {
+                overflow: hidden;
+                font-size: 1.3em;
+                margin-top: 0.3em;
+            }
+
+            .image-navigation-bar a.next
+            {
+                float: right;
+            }
+
+            .image-navigation-bar a.previous
+            {
+                float: left;
+            }
         </style>
     </head>
     <div class="container">
