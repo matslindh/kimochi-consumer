@@ -63,6 +63,11 @@
                 color: black;
                 text-decoration: none;
             }
+
+            .block-gallery-list a.active img
+            {
+                opacity: 0.4;
+            }
         </style>
     </head>
     <div class="container">
