@@ -73,17 +73,18 @@
             {
                 overflow: hidden;
                 font-size: 1.3em;
-                margin-top: 0.3em;
+                margin-top: 0.5em;
+                text-align: right;
             }
 
-            .image-navigation-bar a.next
-            {
-                float: right;
-            }
-
-            .image-navigation-bar a.previous
+            .image-navigation-bar .back
             {
                 float: left;
+            }
+
+            .container
+            {
+                width: 870px;
             }
         </style>
     </head>
