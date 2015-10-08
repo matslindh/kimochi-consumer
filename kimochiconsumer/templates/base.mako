@@ -86,6 +86,12 @@
             {
                 width: 870px;
             }
+
+            .page-section
+            {
+                clear: both;
+                margin-bottom: 1.0em;
+            }
         </style>
     </head>
     <div class="container">
