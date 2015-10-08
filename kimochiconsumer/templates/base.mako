@@ -43,6 +43,8 @@
                 padding-top: 2.0em;
                 border-top: 1px solid #eee;
                 color: #aaa;
+                white-space: pre-line;
+                margin-bottom: 1.0em;
             }
 
             nav a
@@ -111,8 +113,6 @@
             ${next.body()}
         </div>
 
-        <footer>
-            ${site['footer']['text'] | n}
-        </footer>
+        <footer>${site['footer']['text'] | n}</footer>
     </div>
 </html>
