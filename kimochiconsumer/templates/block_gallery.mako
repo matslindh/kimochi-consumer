@@ -10,7 +10,7 @@
         %>
         <a href="${image_url}" ${'class="active"' if image_url == request.current_route_url() else '' | n}>
             % if '1:1' in image['variations']:
-                <img src="${image['variations']['1:1']['270x270']}" alt="" />
+                <img src="${image['variations']['1:1']['270x270']}" alt="" style="max-width: 100%" />
             % else:
                 <img src="${image['preview']['400x200']}" alt="" style="max-width: 300px; max-height: 300px;" />
             % endif

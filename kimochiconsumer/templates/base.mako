@@ -86,7 +86,7 @@
 
             .container
             {
-                width: 870px;
+                width: 849px;
             }
 
             .page-section
