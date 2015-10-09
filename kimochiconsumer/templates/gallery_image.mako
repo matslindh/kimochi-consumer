@@ -17,15 +17,21 @@
         <a href="${request.current_route_url(_route_name='gallery_view')}" class="back">Back to gallery</a>
 
         % if previous:
-            <a href="${request.current_route_url(image_id=previous['id'])}" class="previous" id="previous-link"> <span class="glyphicon glyphicon-chevron-left"></span> Previous</a>
+            <a href="${request.current_route_url(image_id=previous['id'])}" class="previous" id="previous-link">
         % endif
 
-        % if next and previous:
-            /
-        % endif
+        <span class="glyphicon glyphicon-chevron-left"></span> Previous${'</a>' if previous else '' | n}
+
+        /
 
         % if next:
-            <a href="${request.current_route_url(image_id=next['id'])}" class="next" id="next-link">Next <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <a href="${request.current_route_url(image_id=next['id'])}" class="next" id="next-link">
+        % endif
+
+        Next <span class="glyphicon glyphicon-chevron-right"></span>
+
+        % if next:
+            </a>
         % endif
     </div>
 </section>
