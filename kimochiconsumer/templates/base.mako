@@ -100,6 +100,11 @@
                 clear: both;
                 margin-bottom: 1.0em;
             }
+
+            a:hover
+            {
+                text-decoration: none;
+            }
         </style>
     </head>
     <div class="container">
