@@ -11,7 +11,7 @@
         </p>
     % endif
 
-    <img src="${image['source']['1280']}" alt="${image['title']}" style="max-width: 100%;" />
+    <img src="${image['source']['1280']}" alt="${image['title']}" style="max-width: 100%; width: 100%;" />
 
     <div class="image-navigation-bar">
         <a href="${request.current_route_url(_route_name='gallery_view')}" class="back">Back to gallery</a>
