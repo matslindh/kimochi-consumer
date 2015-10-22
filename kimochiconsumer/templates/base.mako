@@ -38,6 +38,11 @@
                 width: 100%;
             }
 
+            .gallery-image>p
+            {
+                white-space: pre-line;
+            }
+
             footer {
                 text-align: center;
                 margin-top: 2.0em;
