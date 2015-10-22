@@ -14,7 +14,7 @@
     <img src="${image['source']['1280']}" alt="${image['title']}" style="max-width: 100%;" />
 
     <div class="image-navigation-bar">
-        <a href="${request.current_route_url(_route_name='gallery_view')}" class="back">Back to gallery</a>
+        <a href="${request.current_route_url(_route_name='gallery_view')}" class="back">Back to &laquo;${gallery['name']}&raquo;</a>
 
         % if previous:
             <a href="${request.current_route_url(image_id=previous['id'])}" class="previous" id="previous-link">
