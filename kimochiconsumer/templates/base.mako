@@ -35,6 +35,7 @@
             .gallery-image
             {
                 text-align: center;
+                width: 100%;
             }
 
             footer {
