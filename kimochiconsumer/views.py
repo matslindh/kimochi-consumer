@@ -12,6 +12,9 @@ def page_view(request):
     else:
         data = request.kimochi.page('index')
 
+    import pprint
+    pprint.pprint(data)
+
     return data
 
 @view_config(route_name='gallery_view', renderer='templates/gallery.mako')
