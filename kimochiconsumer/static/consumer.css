@@ -12,6 +12,11 @@ nav a
     text-transform: uppercase;
 }
 
+nav a.active_page
+{
+    color: black;
+}
+
 nav
 {
     text-align: center;
