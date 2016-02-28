@@ -38,7 +38,7 @@
 
 <hr>
 
-<%include file="block_gallery.mako" args="gallery=gallery" />
+<%include file="sections/block_gallery.mako" args="gallery=gallery" />
 
 <script type="text/javascript">
     $(document).keydown(function(e) {
