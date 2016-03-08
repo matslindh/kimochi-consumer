@@ -4,6 +4,7 @@ from pyramid.httpexceptions import (
     HTTPNotFound,
 )
 
+
 @view_config(route_name='page', renderer='templates/page.mako')
 @view_config(route_name='page_view', renderer='templates/page.mako')
 def page_view(request):
@@ -12,10 +13,8 @@ def page_view(request):
     else:
         data = request.kimochi.page('index')
 
-    import pprint
-    pprint.pprint(data)
-
     return data
+
 
 @view_config(route_name='gallery_view', renderer='templates/gallery.mako')
 def gallery_view(request):
@@ -25,6 +24,7 @@ def gallery_view(request):
         raise HTTPNotFound
 
     return data
+
 
 @view_config(route_name='gallery_image_view', renderer='templates/gallery_image.mako')
 def gallery_image_view(request):
