@@ -25,7 +25,7 @@
 
             <nav class="nav">
                 % for page_link in site['pages']:
-                    <a class="${'active_page' if page['id'] == page_link['id'] else 'nonactive_page'}" href="${request.route_url('page_view', page_id=page_link['id'], slug=page_link['slug'])}">${page_link['name']}</a>
+                    <a class="${'active_page' if page and page['id'] == page_link['id'] else 'nonactive_page'}" href="${request.route_url('page_view', page_id=page_link['id'], slug=page_link['slug'])}">${page_link['name']}</a>
                 % endfor
             </nav>
         </header>
