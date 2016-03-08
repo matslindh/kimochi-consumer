@@ -86,6 +86,17 @@ header h1 a:hover
     float: left;
 }
 
+.gallery-image-thumb-non-quadratic
+{
+    max-width: 252px;
+    max-height: 252px;
+}
+
+.gallery-image-thumb-quadratic
+{
+    max-width: 100%
+}
+
 .container
 {
     width: 849px;
