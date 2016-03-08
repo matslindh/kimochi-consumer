@@ -78,6 +78,7 @@ header h1 a:hover
     font-size: 1.3em;
     margin-top: 0.5em;
     text-align: right;
+    color: #aaa;
 }
 
 .image-navigation-bar .back
