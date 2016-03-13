@@ -17,7 +17,7 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
     </div>
-% else:
+% elif section['images']:
     <div>
         <img src="${section['images'][0]['source']['1280']}" alt="${section['images'][0]['title']}" style="max-width: 100%;" />
     </div>
