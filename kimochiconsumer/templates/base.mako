@@ -15,15 +15,22 @@
     </head>
     <div class="container">
         <header>
-            <h1>
-                <a href="/">${site['name']}</a>
-            </h1>
+            <div class="non-navigation-header-container">
+                <h1>
+                    <a href="/">${site['name']}</a>
+                </h1>
 
-            % if site['tagline']:
-                <p class="tagline">${site['tagline']}</p>
-            % endif
+                % if site['tagline']:
+                    <p class="tagline">${site['tagline']}</p>
+                % endif
+            </div>
 
             <nav class="nav">
+                <div class="social-media-buttons">
+                    <a href=""><img src="${request.static_url('kimochiconsumer:static/instagram.png')}" alt="Instagram" /></a>
+                    <a href=""><img src="${request.static_url('kimochiconsumer:static/facebook.png')}" alt="Facebook" /></a>
+                </div>
+
                 % for page_link in site['pages']:
                     <a class="${'active_page' if page and page['id'] == page_link['id'] else 'nonactive_page'}" href="${request.route_url('page_view', page_id=page_link['id'], slug=page_link['slug'])}">${page_link['name']}</a>
                 % endfor

@@ -59,6 +59,23 @@ nav a
     margin-left: 1.0em;
 }
 
+header nav
+{
+    position: relative;
+}
+
+header nav .social-media-buttons
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+header nav .social-media-buttons a
+{
+    margin: 0;
+}
+
 header h1 a
 {
     color: black;
