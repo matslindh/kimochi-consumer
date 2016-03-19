@@ -27,8 +27,12 @@
 
             <nav class="nav">
                 <div class="social-media-buttons">
-                    <a href=""><img src="${request.static_url('kimochiconsumer:static/instagram.png')}" alt="Instagram" /></a>
-                    <a href=""><img src="${request.static_url('kimochiconsumer:static/facebook.png')}" alt="Facebook" /></a>
+                    % if 'social_media_instagram' in site['settings']:
+                        <a href="${site['settings']['social_media_instagram']}"><img src="${request.static_url('kimochiconsumer:static/instagram.png')}" alt="Instagram" /></a>
+                    % endif
+                    % if 'social_media_facebook' in site['settings']:
+                        <a href="${site['settings']['social_media_facebook']}"><img src="${request.static_url('kimochiconsumer:static/facebook.png')}" alt="Facebook" /></a>
+                    % endif
                 </div>
 
                 % for page_link in site['pages']:
