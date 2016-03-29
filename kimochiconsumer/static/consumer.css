@@ -43,7 +43,7 @@ header
 
 .gallery-image h1
 {
-    font-size: 18pt;
+    font-size: 14pt;
     margin-bottom: 0;
 }
 
@@ -139,7 +139,6 @@ header h1 a:hover
 {
     background-image: none;
     text-shadow: 1px 1px 6px #222;1
-
 }
 
 .container
