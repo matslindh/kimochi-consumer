@@ -17,7 +17,11 @@
         <header>
             <div class="non-navigation-header-container">
                 <h1>
-                    <a href="/">${site['name']}</a>
+                    % if site['header']['image_url']:
+                        <a href="/"><img src="${site['header']['image_url']}" alt="${site['name']}" /></a>
+                    % else:
+                        <a href="/">${site['name']}</a>
+                    % endif
                 </h1>
 
                 % if site['tagline']:
