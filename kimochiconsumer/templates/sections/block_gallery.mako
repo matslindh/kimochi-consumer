@@ -10,9 +10,9 @@
         %>
         <a href="${image_url}" ${'class="active"' if image_url == request.current_route_url() else '' | n}>
             % if '1:1' in image['variations']:
-                <img src="${image['variations']['1:1']['270x270']}" alt="" class="gallery-image-thumb-quadratic" />
+                <img src="${image['variations']['1:1']['540x540']}" alt="" class="gallery-image-thumb-quadratic img-responsive" />
             % else:
-                <img src="${image['preview']['400x200']}" alt="" class="gallery-image-thumb-non-quadratic" />
+                <img src="${image['preview']['400x200']}" alt="" class="gallery-image-thumb-non-quadratic img-responsive" />
             % endif
         </a>
     </div>

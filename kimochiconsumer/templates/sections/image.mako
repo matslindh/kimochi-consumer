@@ -5,7 +5,7 @@
         <div class="carousel-inner">
             % for i, image in enumerate(section['images']):
                 <div class="item ${'active' if i == 0 else ''}">
-                    <img src="${image['source']['1280']}" alt="${image['title']}" style="max-width: 100%;" />
+                    <img src="${image['source']['1280']}" alt="${image['title']}" style="max-width: 100%;" class="img-responsive" />
                 </div>
             % endfor
         </div>

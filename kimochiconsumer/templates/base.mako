@@ -18,7 +18,7 @@
             <div class="non-navigation-header-container">
                 <h1>
                     % if site['header']['image_url']:
-                        <a href="/"><img src="${site['header']['image_url']}" alt="${site['name']}" /></a>
+                        <a href="/"><img src="${site['header']['image_url']}" alt="${site['name']}" class="img-responsive" /></a>
                     % else:
                         <a href="/">${site['name']}</a>
                     % endif
