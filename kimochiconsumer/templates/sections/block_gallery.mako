@@ -12,7 +12,7 @@
             % if '1:1' in image['variations']:
                 <img src="${image['variations']['1:1']['540x540']}" alt="" class="gallery-image-thumb-quadratic img-responsive" />
             % else:
-                <img src="${image['preview']['400x200']}" alt="" class="gallery-image-thumb-non-quadratic img-responsive" />
+                <img src="${image['preview']['800x400']}" alt="" class="gallery-image-thumb-non-quadratic img-responsive" />
             % endif
         </a>
     </div>
