@@ -4,7 +4,6 @@ from setuptools import setup, find_packages
 
 requires = [
     'pyramid',
-    'pyramid_debugtoolbar',
     'pyramid_mako',
     'requests',
     'waitress',
