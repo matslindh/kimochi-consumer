@@ -12,6 +12,9 @@
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Raleway:100|Roboto:300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="${request.static_url('kimochiconsumer:static/consumer.css')}">
+        % for stylesheet in additional_stylesheets:
+            <link rel="stylesheet" href="${request.static_url('kimochiconsumer:static/' + stylesheet)}">
+        % endfor
     </head>
     <div class="container">
         <header>

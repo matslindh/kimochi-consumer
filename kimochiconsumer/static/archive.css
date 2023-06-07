@@ -1,0 +1,38 @@
+header h1 a {
+    width: 100%;
+}
+
+header h1 img {
+    margin: auto;
+}
+
+.gallery-image-thumb-non-quadratic
+{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.gallery-image-thumb-quadratic
+{
+    max-width: 100%
+}
+
+.container
+{
+    max-width: 1200px;
+}
+
+@media (max-width: 1000px) {
+    .gallery-image-container {
+        margin-bottom: 2.0rem;
+    }
+
+    .gallery-image-container a {
+        width: 100%;
+    }
+
+    .gallery-image-container img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

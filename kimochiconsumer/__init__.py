@@ -1,5 +1,7 @@
 from pyramid.config import Configurator
 import kimochiconsumer.kimochi
+from pyramid.events import subscriber
+from pyramid.events import BeforeRender
 
 
 def main(global_config, **settings):
@@ -18,5 +20,13 @@ def main(global_config, **settings):
     config.add_route('gallery_view', '/gallery/{gallery_id}')
     config.add_route('gallery_image_view', '/gallery/{gallery_id}/image/{image_id}')
     config.add_request_method(get_kimochi, 'kimochi', reify=True)
+    config.add_request_method(lambda x: settings, 'settings', reify=True)
     config.scan()
     return config.make_wsgi_app()
+
+
+@subscriber(BeforeRender)
+def add_global(event):
+    event['additional_stylesheets'] = event['request'].settings.get('kimochi.additional_stylesheets', '').split(',')
+
+

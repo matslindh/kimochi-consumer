@@ -1,5 +1,6 @@
 import requests
 
+
 class Kimochi:
     def __init__(self, url, api_key, site_key=None):
         if not url.endswith('/'):

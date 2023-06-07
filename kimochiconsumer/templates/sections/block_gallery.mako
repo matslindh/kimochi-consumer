@@ -4,7 +4,7 @@
 %>
 % for idx, image in enumerate(gallery['images']):
     ${'<div class="row block-gallery-list" style="margin-bottom: 2.0em;">' if idx % 3 == 0 else '' | n}
-    <div class="col-md-4" style="text-align: ${aligns[idx%3]}">
+    <div class="col-md-4 gallery-image-container" style="text-align: ${aligns[idx%3]}">
         <%
             image_url = request.route_url('gallery_image_view', gallery_id=gallery['id'], image_id=image['id'])
         %>
